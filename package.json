@@ -1,0 +1,12 @@
+{
+  "name": "nodeexpress",
+  "version": "1.0.0",
+  "description": "suggests using express-generator\r -D means --save-dev so npm i -D means npm install --save-dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
