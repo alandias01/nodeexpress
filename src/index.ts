@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import baseRouter from './routes/baseRoute';
+import authRoute from './Auth/authRoute';
 
 /*
 import dotenv from 'dotenv'; dotenv.config();  //Reads in .env file
@@ -29,7 +30,8 @@ app.use(express.urlencoded({ extended: true }));
 //   console.log('route hit');
 // });
 
-app.use('/api', baseRouter);
+//app.use('/api', baseRouter);
+app.use('/api', authRoute);
 
 app.listen(envVars.port || 3000, () => {
   console.log('Listening');
